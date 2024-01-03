@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box {
+      float: left;
+      /* float: right; */
+      margin: 15px;
+      width: 150px;
+      height: 100px;
+      padding: 1em;
+      background-color: lightgray;
+    }
+
+    body {
+      font-family: helvetica;
+      width: 90%;
+      margin: 0 auto;
+      max-width: 900px;
+    }
+
+    p:first-of-type:first-letter {
+      float: left;
+      font-size: 45px;
+      line-height: 1;
+      font-weight: bold;
+      margin-right: 9px;
+    }
+
+    .wrapper {
+      color: #fff;
+      background-color: lightslategray;
+      padding: 10px;
+    }
+    .wrapper::after {
+      content: "";
+      clear: block;
+      display: block;
+    }
+
+    .clear {
+      clear: left;
+    }
+    .special {
+      padding: 10px;
+      background-color: lightblue;
+      color: #fff;
+    }
+    .position {
+      position: static;
+      background: yellow;
+      border: 1px solid black;
+      padding: 10px;
+    }
+    .positioned {
+      position: absolute;
+      background: green;
+      border: 1px solid black;
+      padding: 10px;
+      top: 30px;
+      left: 140px;
+    }
+
+    .positioned2 {
+      position: relative;
+      background: blueviolet;
+      border: 1px solid black;
+      padding: 10px;
+      top: 30px;
+      left: 30px;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Simple float Examples</h1>
+    </header>
+    <main>
+      <div class="box">Float</div>
+      <p class="special">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+        temporibus hic dolores veniam dolor mollitia harum ullam ad! Ut nesciunt
+        harum est deserunt doloremque adipisci nulla hic dignissimos. Non,
+        consectetur?
+      </p>
+      <!-- p*4>lorem -->
+      <p class="clear">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+        voluptatum autem qui consequuntur. Mollitia nesciunt molestias pariatur.
+        Eum voluptas eveniet officia nemo vitae architecto voluptatem? Dolore
+        facilis eos nisi temporibus.
+      </p>
+      <p class="position">
+        Nesciunt quisquam id odit perspiciatis tempora incidunt cum dignissimos
+        veniam debitis excepturi magni vero sapiente explicabo aliquam esse, non
+        eum consequatur ea aperiam necessitatibus. Exercitationem qui sunt
+        debitis quidem quae?
+      </p>
+      <p class="positioned">
+        At numquam neque, officiis molestias et cum id! Molestias repellat
+        perferendis quo voluptatem, odit rerum. Doloremque ratione sapiente
+        porro eius, facilis nesciunt atque, sequi vero, delectus iure eos natus
+        nulla.
+      </p>
+      <p class="positioned2">
+        Amet quidem necessitatibus excepturi? Repudiandae, quia! Dolorum
+        dignissimos exercitationem incidunt quos quasi dolore doloremque,
+        placeat accusamus officiis, recusandae ullam nesciunt consectetur.
+        Ipsam, mollitia deleniti. Fuga consequuntur asperiores cupiditate minus
+        nobis.
+      </p>
+      <div class="wrapper">
+        <div class="box">Float</div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+          temporibus hic dolores veniam dolor mollitia harum ullam ad! Ut
+          nesciunt harum est deserunt doloremque adipisci nulla hic dignissimos.
+          Non, consectetur?
+        </p>
+      </div>
+      <!-- p*4>lorem -->
+      <p class="clear">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+        voluptatum autem qui consequuntur. Mollitia nesciunt molestias pariatur.
+        Eum voluptas eveniet officia nemo vitae architecto voluptatem? Dolore
+        facilis eos nisi temporibus.
+      </p>
+    </main>
+  </body>
+</html>

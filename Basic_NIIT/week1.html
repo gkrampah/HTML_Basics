@@ -20,9 +20,17 @@
         font-weight: bold;
       }
       ul,
-      ol,
-      dl {
+      ol {
         color: blueviolet;
+        /* text-decoration: none; */
+        display: flex;
+        border: 2px solid black;
+        padding: 10px;
+        list-style: none;
+      }
+      li {
+        border: 2px solid black;
+        padding: 10px;
       }
       #headsec {
         font-size: 2rem;
@@ -42,6 +50,25 @@
       /* general sibling selector */
       button ~ p {
         color: purple;
+      }
+      .box {
+        margin: -40px 30px 40px 4em; /* 1em=16px */
+        width: 400px;
+        height: 150px;
+        border: 5px solid rebeccapurple;
+        background-color: yellow;
+        padding: 30px 20px 0px 20px;
+      }
+      .container {
+        margin-top: 80px;
+        margin-left: 30px;
+        width: 550px;
+        height: 200px;
+        border: 5px solid black;
+        padding: 0px 20px 0px 20px;
+      }
+      .alternate {
+        box-sizing: border-box;
       }
     </style>
     <link rel="stylesheet" href="style.css" />
@@ -112,6 +139,9 @@
       <p>I am a paragraph tag 2</p>
       <h3>Breaker that is exempted</h3>
       <p>I am a paragraph tag 3</p>
+      <div class="container"><div class="box">Chnage my margin</div></div>
+      <div class="container">New box</div>
+      <div class="alternate">Alternative Model</div>
     </main>
     <footer>Copyright &copy; Godwin</footer>
   </body>
